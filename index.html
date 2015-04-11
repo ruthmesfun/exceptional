@@ -9,43 +9,77 @@
     <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+    <div id = "social">
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">Google Plus</a>
+    </div>
     <header>
-      <div id="logo">
-        <h1> Exceptional</h1>
-        <h2> Realty </h2>
-      </div>
-      <nav>    
-          <!--links -->
-          <a href="index.html">About</a> 
-          <a href="new-properties.html"> New Properties </a>
-          <a href="market-report.html"> Market Report </a>
-          <a href="contact.html"> Contact </a>
-          <a href="http://hud.gov">H.U.D</a>
-      </nav>
+      <div class ="wrapper">
+        <div id="logo">
+          <h1> Exceptional</h1>
+          <h2> Realty </h2>
+        </div>
+        <nav>    
+            <!--links -->
+            <a href="index.html">About</a> 
+            <a href="new-properties.html"> New Properties </a>
+            <a href="market-report.html"> Market Report </a>
+            <a href="contact.html"> Contact </a>
+            <a href="http://hud.gov">H.U.D</a>
+        </nav>
+      </div> <!-- .wrapper -->
     </header>
 
-    <section id="featured-property">
-      <figure>
-        <img src="images/intro-pic.jpg" alt="a beautiful living room" title ="Welcome to Exceptional Realty!">
-        <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards</figcaption>
-      </figure>
-      <p> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Aperiam laborum nulla magni, animi, ipsum qui voluptas cupiditate sunt eius molestias ratione nostrum vel fuga temporibus fugit veritatis repellendus quasi voluptatibus. </p> 
+    <div class="wrapper clearfix">
+      <section id="featured-property" class= "col-3 first" >
+        <figure>
+          <img src="images/intro-pic.jpg" alt="a beautiful living room" title ="Welcome to Exceptional Realty!">
+          <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards</figcaption>
+        </figure>
+        <p> Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Aperiam laborum nulla magni, animi, ipsum qui voluptas cupiditate sunt eius molestias ratione nostrum vel fuga temporibus fugit veritatis repellendus quasi voluptatibus. </p> 
 
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio distinctio quod quisquam, provident facilis nemo architecto possimus alias commodi autem delectus hic quos vero, veritatis nulla quam quidem nostrum non. </p>
-    </section>
-    
-    <section id="promotional">
-    <!--promo video -->
-      <figure>
-        <video controls>
-          <source src="videos/realestate.mp4" type="video/mp4">
-          <source src="videos/realestate.ogv" type="video/ogg">
-          Your browser does not support HTML5 video. <a href="http://browsehappy.com" target= "_blank"> Please upgrade your browser.</a>.        
-        </video>
-        <figcaption>Exceptional Realty Group Promotional Video - Source: Archive.org</figcaption>
-      </figure>
-    </section>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio distinctio quod quisquam, provident facilis nemo architecto possimus alias commodi autem delectus hic quos vero, veritatis nulla quam quidem nostrum non. </p>
+      </section>
+      
+      <section id="promotional" class= "col-2 first">
+      <!--promo video -->
+        <figure>
+          <video controls>
+            <source src="videos/realestate.mp4" type="video/mp4">
+            <source src="videos/realestate.ogv" type="video/ogg">
+            Your browser does not support HTML5 video. <a href="http://browsehappy.com" target= "_blank"> Please upgrade your browser.</a>.        
+          </video>
+          <figcaption>Exceptional Realty Group Promotional Video - Source: Archive.org</figcaption>
+        </figure>
+      </section>
 
+
+      <section id = "news" class="col-1">
+        <h3> Company News</h3>
+        <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio distinctio quod quisquam, provident facilis nemo architecto possimus alias commodi autem delectus hic quos vero, veritatis nulla quam quidem nostrum non. </p>
+      </section>
+    </div> <!-- .wrapper -->
+
+    <section id = "details">
+      <div class = "wrapper clearfix">
+        <div class="col-1 first">
+          <h3>Contact</h3>
+          <p>
+            email: <a href= "mailto:info@exceptionalrealty.com">
+            info@exceptionalrealty.com</a><br>
+            phone: +1 710 555 1234
+          </p>
+          <h3>Correspondence</h3>
+          <address>
+            Exceptional Realty<br>
+            P.O Box 5555<br>
+            Brooklyn, NY 11201
+          </address>
+        </div> <!-- .wrapper -->
+    </div> 
+
+    </section>
     <footer>
       &copy; 2014 Exceptional Realty. All Rights Reserved.
     </footer>
